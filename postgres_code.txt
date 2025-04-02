@@ -1,0 +1,7 @@
+psql -U postgres_2
+
+create database postgres2;
+
+\c postgres2
+
+create schema testing_write;
