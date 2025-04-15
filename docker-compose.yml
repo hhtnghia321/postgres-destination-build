@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: postgres_2
       POSTGRES_DB: postgres_2
     ports:
-      - 5430:5432
+      - 5530:5432
     restart: always
     networks:
       network_test:
