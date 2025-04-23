@@ -1,5 +1,5 @@
 services:
- postgres:
+ postgres_destination:
     image: postgres:16
     container_name: postgres_2
     environment:
@@ -10,8 +10,7 @@ services:
       - 5530:5432
     restart: always
     networks:
-      network_test:
-        ipv4_address: 172.18.0.3
+      - network_test
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres_2"]
       interval: 10s
